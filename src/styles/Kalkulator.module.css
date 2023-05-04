@@ -1,0 +1,63 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.deskripsi {
+    display: inherit;
+    align-items: center;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.p {
+    font-family: monospace;
+    text-align: center;
+}
+
+/* Ini buat CSS Button */
+.tombolkalkulator {
+    display: flex;
+    column-gap: 20px;
+}
+
+.kalkulatorpertama {
+    display: inherit;
+    align-items: baseline;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.pkalkulatorsatu {
+    align-items:center;
+    width: var(--max-width);
+    max-width: 20%;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(15%, auto));
+    row-gap: 20px;
+    min-height: 5vh;
+}
+
+.pinputkalkulator {
+    text-align: left;
+    align-items: center;
+    max-width: 50%;
+    display: flex;
+    min-height: 10vh;
+    row-gap: 5px;
+}
+
+.kalkulatorkedua {
+    display: inherit;
+    align-items: baseline;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 1rem;
+    min-height: 100vh;
+}

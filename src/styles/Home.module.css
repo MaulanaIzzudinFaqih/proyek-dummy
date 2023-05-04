@@ -47,6 +47,26 @@
   max-width: 50%;
 }
 
+.gridtwo{
+  align-items: center;
+  display: grid;
+  max-width: 100%;
+  grid-template-rows: repeat(5, minmax(15%, auto));
+}
+
+.button{
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  width: 40%;
+  padding: 0.5rem;
+  transition: box-shadow 180ms ease-in-out;
+  text-align: center;
+}
+
+.button:hover{
+  box-shadow: 0 0 0 2.5px #ffffff;
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);

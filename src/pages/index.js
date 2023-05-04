@@ -155,6 +155,20 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <br></br>
+        <br></br>
+        
+        <div className={styles.button}>
+          <a
+            href='/page-kalkulator'
+            target="_blank"
+          >
+            <h2>
+            Klik disini untuk mencoba kalkulator!
+            </h2>
+          </a>
+        </div>
+        
       </main>
     </>
   )
