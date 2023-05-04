@@ -69,7 +69,8 @@ export default function Home() {
                      id='input1' 
                      value={input1}
                      placeholder='angka pertama'
-                     onChange={(e) => setInput1(e.target.value)} //onchange termasuk props input, kalo terjadi sesuatu pada html tag input maka akan melakukan sesuatu.
+                     onChange={(e) => setInput1(e.target.value)} 
+                     //onchange termasuk props input, kalo terjadi sesuatu pada html tag input maka akan melakukan sesuatu.
                      //e = perubahan dalam input. => artinya ngejalanin sesuatu. setInput => mengubah nilai dari variabel input1. 
                      //e.target.value = perubahan dalam html tag input  
                      >

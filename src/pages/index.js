@@ -160,7 +160,7 @@ export default function Home() {
         
         <div className={styles.button}>
           <a
-            href='/page-kalkulator'
+            href='/pagekalkulator'
             target="_blank"
           >
             <h2>
