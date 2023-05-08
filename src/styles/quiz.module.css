@@ -1,0 +1,84 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.p {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.deskripsi {
+    display: inherit;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 1.5rem;
+    max-width: 45%;
+}
+
+.inputNama {
+    min-height: 4vH;
+    display: inherit;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.kolompertanyaan {
+ height: auto;
+ margin-top: 5px;
+ background-color: gray;
+ width: 50%;
+ padding: 15px;
+ text-align: center;
+ border: 3px solid white;
+ border-radius: 10px;
+ font-family: monospace;
+}
+
+.ul {
+  list-style: none;
+}
+
+.li {
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+.kolomhasil {
+ height: auto;
+ margin-top: 10px;
+ background-color: gray;
+ width: 30%;
+ padding: 15px;
+ text-align: center;
+ border: 3px solid white;
+ border-radius: 10px;
+ font-family: monospace;
+}
+
+.button {
+  background-color: green;
+  width: 20%;
+  height: 20%;
+  min-height: 5vh;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.tombolkembali {
+    background-color: green;
+    width: 40%;
+    height: 20%;
+    min-height: 5vh;
+    border-radius: 10px;
+    margin-top: 10px;
+}

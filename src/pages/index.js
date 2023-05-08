@@ -168,6 +168,20 @@ export default function Home() {
             </h2>
           </a>
         </div>
+        <br></br>
+        
+        <div className={styles.button}>
+          <a 
+           href='/quiz'
+           target='_blank'
+           >
+            <h2>
+              Klik disini untuk memulai quiz!
+            </h2>
+           </a>
+        </div>
+
+    
         
       </main>
     </>
