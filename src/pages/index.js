@@ -181,6 +181,18 @@ export default function Home() {
            </a>
         </div>
 
+        <br/>
+        
+        <div className={styles.button}>
+          <a 
+           href='/to.do.list'
+           target='_blank'
+           >
+            <h2>
+              To do List
+            </h2>
+           </a>
+        </div>
     
         
       </main>

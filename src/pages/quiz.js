@@ -9,8 +9,6 @@ export default function Home () {
     const [hasil, setHasil] = useState(0)
     const [pertanyaansaatini, setPertanyaanSaatIni] = useState(0)
     const [showHasilAkhir, setHasilAkhir] = useState(false)
-  
-
     
     // pertanyaan
     const pertanyaan = [
