@@ -185,7 +185,7 @@ export default function Home() {
         
         <div className={styles.button}>
           <a 
-           href='/to.do.list'
+           href='/to-do-list'
            target='_blank'
            >
             <h2>

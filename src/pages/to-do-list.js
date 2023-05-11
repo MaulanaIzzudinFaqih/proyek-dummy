@@ -10,11 +10,13 @@ import {
 	useToast,
 } from "@chakra-ui/react";
 import TodoList from "@/component/daftarlist";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import Head from "next/head";
 
 export default function TodoListPage() {
+	const [input, setInput] = useState("");
+
 	// function buat submit todo
 	function handleClick() {
 		if (!input) {
@@ -30,14 +32,24 @@ export default function TodoListPage() {
 		const todo = {
 			id: nanoid(),
 			body: input,
+			isChecked: false,
 		};
 		addTodo(todo);
 		setInput("");
 	}
 
+	//fungsi buat ngubah status cek
+	function handleClickCheckBox(index, value) {
+		const temp = [...todos];
+		temp[index].isChecked = value;
+		setTodos(temp);
+		localStorage.setItem("todos", JSON.stringify(temp));
+	}
+
 	//function buat nambahin todo
 	function addTodo(todo) {
 		setTodos([...todos, todo]);
+		localStorage.setItem("todos", JSON.stringify([...todos, todo]));
 	}
 
 	//function buat delete list
@@ -46,6 +58,7 @@ export default function TodoListPage() {
 			return todo.id !== id;
 		});
 		setTodos(newTodos);
+		localStorage.setItem("todos", JSON.stringify(newTodos));
 	}
 
 	//const list
@@ -63,8 +76,14 @@ export default function TodoListPage() {
 	//fungsi buat munculin notifikasi todo ditambahkan
 	const toast = useToast();
 
-	const [todos, setTodos] = useState(initialTodos);
-	const [input, setInput] = useState("");
+	//buat nyimpen ke local storage
+	const [todos, setTodos] = useState([]);
+	useEffect(() => {
+		const todos = JSON.parse(localStorage.getItem("todos"));
+		if (todos) {
+			setTodos(todos);
+		}
+	}, []);
 
 	return (
 		<>
@@ -79,7 +98,7 @@ export default function TodoListPage() {
 					p={5}
 					rounded={6}
 					width="50%"
-					height="auto"
+					height="20%"
 					alignItems="center"
 					borderRadius="10px">
 					<Heading textColor="white"> To Do List</Heading>
@@ -109,7 +128,11 @@ export default function TodoListPage() {
 						</InputRightElement>
 					</InputGroup>
 
-					<TodoList todos={todos} deleteTodo={deleteTodo} />
+					<TodoList
+						todos={todos}
+						deleteTodo={deleteTodo}
+						changeStatus={handleClickCheckBox}
+					/>
 				</Flex>
 			</VStack>
 		</>
