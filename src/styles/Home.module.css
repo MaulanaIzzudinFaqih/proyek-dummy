@@ -15,7 +15,7 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .description a {
@@ -29,9 +29,9 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  background-color: rgba(var(--callout-rgb), 0.1);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  border-radius: 10px;
 }
 
 .code {
@@ -56,15 +56,20 @@
 
 .button{
   border-radius: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid gray;
+  background-color: #000;
   width: 40%;
   padding: 0.5rem;
-  transition: box-shadow 180ms ease-in-out;
+  transition: all 0.3s ease-out;
   text-align: center;
+  color: #ffffff;
 }
 
-.button:hover{
+.button:hover, 
+.button:focus{
   box-shadow: 0 0 0 2.5px #ffffff;
+  background-color: white;
+  color:#000;
 }
 
 .card {
@@ -91,6 +96,7 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+  color:#000;
 }
 
 .center {

@@ -22,8 +22,7 @@ export default function Home() {
             Welcome to proyek awal!
           </p>
           <div>
-            {/* Link ke LinkedIn */}
-              By Maulana Izzudin Faqih
+              <p>By Maulana Izzudin Faqih</p>
           </div>
         </div>
 
@@ -55,7 +54,7 @@ export default function Home() {
               <Image
               className={styles.instagram}
               title='Instagram'
-              src="/instagram-logo.png"
+              src="/instagram_logo.png"
               alt="Instagram"
               width={25}
               height={25}
@@ -77,7 +76,7 @@ export default function Home() {
             <Image
               className={styles.instagram}
               title='Github'
-              src="/github-logo1.png"
+              src="/github_logo.png"
               alt="Github"
               width={25}
               height={25}
@@ -99,7 +98,7 @@ export default function Home() {
             <Image
               className={styles.instagram}
               title='Twitter'
-              src="/logo-twitter.png"
+              src="/twitter-logobl.png"
               alt="Twitter logo"
               width={25}
               height={25}
@@ -121,7 +120,7 @@ export default function Home() {
             <Image
               className={styles.instagram}
               title='Whatsapp'
-              src="/logo-whatsapp.png"
+              src="/whatsapp_logo.png"
               alt="Whatsapp logo"
               width={25}
               height={25}
@@ -143,7 +142,7 @@ export default function Home() {
             <Image
               className={styles.instagram}
               title='LinkedIn'
-              src="/linkedin-logo.png"
+              src="/linkedin_logo.png"
               alt="Whatsapp logo"
               width={25}
               height={25}
@@ -189,7 +188,7 @@ export default function Home() {
            target='_blank'
            >
             <h2>
-              To do List
+              Buat Ngisi To do List
             </h2>
            </a>
         </div>
